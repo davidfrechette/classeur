@@ -1,0 +1,22 @@
+{
+  "name": "classeur_photos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "chokidar": "^1.6.0",
+    "dateformat": "^1.0.12",
+    "exiftool-wrapper": "^1.0.2",
+    "fs-promise": "^0.5.0",
+    "moment": "^2.15.2"
+  },
+  "devDependencies": {
+    "watch": "^0.19.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watch 'node main/main.js' ./main/"
+  },
+  "author": "",
+  "license": "ISC"
+}
