@@ -17,6 +17,7 @@ var picturesBasePath = './pictures/';
 // }, function(rs) {
 //   console.log(rs);
 // })
+
 fsp.mkdir('./pictures').then(function(rs) {
   console.log(rs);
 }, function(rs) {
@@ -52,14 +53,12 @@ function extractData(path) {
 }
 
 function createDirectoryStructureFromDate(dateString) {
-  // console.log(dateString.replace(/\ /, 'T'));
   var date = moment(dateString, 'YYYY:MM:DD hh:mm:ss+-HH:mm');
   var year = date.year();
   var month = date.month();
   var day = date.date();
-
-  fs.mkdir(picturesBasePath, 0755)
   
+  console.log(date);
 }
 
 function copyFile(buffer) {
